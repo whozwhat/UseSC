@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="UseSC" target="1.5" />
+      <module name="UseSC" target="1.10" />
     </bytecodeTargetLevel>
   </component>
 </project>
