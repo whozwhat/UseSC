@@ -20,6 +20,9 @@
     <div>
         如果您还不是我们的用户，请<a href="/Regist.jsp">点击注册</a>
     </div>
+    <form action="xx.sc" name="xxForm">
+        <div><input type="submit" name="xx" value="测试" /></div>
+    </form>
     <%
         session.removeAttribute("loginMessage");
     %>

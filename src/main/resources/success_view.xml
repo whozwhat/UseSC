@@ -6,7 +6,7 @@
     <body>
         <form>
             <name>logoutForm</name>
-            <action>logout.action</action>
+            <action>logout.sc</action>
             <method>post</method>
             <textView>
                 <name>userName</name>

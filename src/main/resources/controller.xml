@@ -16,5 +16,10 @@
             <result name="success" type="forward" value="Welcome.jsp"></result>
             <result name="failure" type="redirect" value="Regist.jsp"></result>
         </action>
+        <action name="logout" class="water.ustc.action.LogoutAction"
+                method="handleLogout">
+            <interceptro-ref name="log"></interceptro-ref>
+            <result name="success" type="forward" value="Login.jsp"></result>
+        </action>
     </controller>
 </sc-configuration>
