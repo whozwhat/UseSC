@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OR-Mappings>
+    <jdbc>
+        <property>
+            <name>driver</name>
+            <value>com.mysql.cj.jdbc.Driver</value>
+        </property>
+        <property>
+            <name>url</name>
+            <value>jdbc:mysql://localhost:3306/sqltest?serverTimezone=GMT</value>
+        </property>
+        <property>
+            <name>userName</name>
+            <value>root</value>
+        </property>
+        <property>
+            <name>password</name>
+            <value>root</value>
+        </property>
+    </jdbc>
+    <class name="water.ustc.dao.UserBean" table="user">
+        <property>
+            <name>userId</name>
+            <column>userId</column>
+            <type>Integer</type>
+            <lazy>false</lazy>
+        </property>
+        <property>
+            <name>userName</name>
+            <column>userName</column>
+            <type>String</type>
+            <lazy>false</lazy>
+        </property>
+        <property>
+            <name>userPass</name>
+            <column>userPass</column>
+            <type>String</type>
+            <lazy>false</lazy>
+        </property>
+    </class>
+</OR-Mappings>

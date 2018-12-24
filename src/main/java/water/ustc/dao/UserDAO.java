@@ -1,36 +1,17 @@
 package water.ustc.dao;
-import sc.ustc.dao.BaseDAO;
-import java.sql.*;
+import sc.ustc.dao.Conversation;
+public class UserDAO  {
 
-public class UserDAO extends BaseDAO {
+    public boolean insert(Object o){return true;}
 
-    public UserDAO(String driver,String url,String userName,String password){
-        super(driver,url,userName,password);
-    }
+    public boolean delete(Object o){return true;}
 
-    public boolean insert(String sql){return true;}
+    public boolean update(Object o){return true;}
 
-    public boolean delete(String sql){return true;}
+    public static Object query(Object o){
 
-    public boolean update(String sql){return true;}
+        Object userBean = Conversation.getObject(o);
 
-    public Object query(String sql, String[] args){
-       // PreparedStatement ps = null;
-        ResultSet rs = null;
-        String userpw = null;
-        try{
-            rs = super.openDBConnection().prepareStatement(sql).executeQuery();
-            while (rs.next())
-            {
-                userpw = rs.getString(1);
-                System.out.println(userpw);
-            }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        UserBean userBean = new UserBean();
-        userBean.setUserPass(userpw);
         return userBean;
     }
 }

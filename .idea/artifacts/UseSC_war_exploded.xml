@@ -14,6 +14,7 @@
           <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.10.3" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.13" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
+          <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.25.2" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="UseSC/web/Web" />
