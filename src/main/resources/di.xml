@@ -4,4 +4,10 @@
     <bean id="login" class="water.ustc.action.LoginAction">
         <field name="userBean" bean-ref="user"></field>
     </bean>
+    <bean id="regist" class="water.ustc.action.RegisterAction">
+        <field name="userBean" bean-ref="user"></field>
+    </bean>
+    <bean id="logout" class="water.ustc.action.LogoutAction">
+        <field name="userBean" bean-ref="user"></field>
+    </bean>
 </sc-di>

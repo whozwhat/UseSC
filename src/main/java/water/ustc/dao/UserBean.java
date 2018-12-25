@@ -50,11 +50,20 @@ public class UserBean {
         //UserDAO userDAO = new UserDAO("com.mysql.cj.jdbc.Driver","jdbc:mysql://localhost:3306/sqltest?serverTimezone=GMT","root","");
         //UserDAO userDAO = new UserDAO("org.sqlite.JDBC","jdbc:sqlite:C:\\Users\\whozawhat\\sqltest2.db","","");
         //UserBean userBean = (UserBean) userDAO.query("select userPass from user where username = " +"'" +userName+"'",null);
-        UserBean userBean = (UserBean) UserDAO.query(new UserBean(this.userId));
+        UserBean userBean = (UserBean) UserDAO.query(this);
         System.out.println("userBean.userPass:"+userBean.userPass);
         System.out.println("this.userPass:"+this.userPass);
         if (userBean.userPass == null) {return false;}
         else if(userBean.userPass.equals(this.userPass)) {return true;}
+        else return false;
+    }
+    public  boolean register(){
+        UserBean userBean = (UserBean) UserDAO.query(this);
+        if (userBean.userName != null) {return false;}
+        else return UserDAO.insert(this);
+    }
+    public boolean logout(){
+        if(UserDAO.delete(this)){return true;}
         else return false;
     }
 }
