@@ -27,6 +27,7 @@ public class RegisterAction extends HttpServlet {
 
     public String handleRegist(HttpServletRequest request, HttpServletResponse response, ActionBean actionBean) throws ServletException, IOException {
         userBean.setUserId(request.getParameter("id"));
+        userBean.setUserName(request.getParameter("name"));
         userBean.setUserPass(request.getParameter("password"));
         //if(UserDAO.query(userBean))
         if (userBean.register()) {

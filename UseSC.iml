@@ -28,7 +28,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 9.0.13" level="application_server_libraries" />
-    <orderEntry type="library" exported="" name="SimpleController" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib:3.2.10" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:7.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant:1.10.3" level="project" />
@@ -36,5 +35,6 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.13" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.25.2" level="project" />
+    <orderEntry type="library" name="SimpleController" level="project" />
   </component>
 </module>

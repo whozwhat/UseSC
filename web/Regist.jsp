@@ -9,6 +9,7 @@
 <body>
 <form action="regist.sc" name="loginForm" accept-charset="utf-8">
     <div>账  号：<input type="text" name="id" /></div>
+    <div>呢  称：<input type="text" name="name" /></div>
     <div>密  码：<input type="text" name="password" /></div>
     <div><input type="submit" name="regist" value="注册" /></div>
 </form>

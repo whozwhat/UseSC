@@ -13,13 +13,13 @@
         <action name="regist" class="water.ustc.action.RegisterAction"
                 method="handleRegist">
             <interceptro-ref name="log"></interceptro-ref>
-            <result name="success" type="script" value="<script>alert('注册成功!')"></result>
-            <result name="failure" type="script" value="<script>alert('用户名重复!')"></result>
+            <result name="success" type="script" value="alert('注册成功!');window.location.href='/'"></result>
+            <result name="failure" type="script" value="alert('用户名重复!');window.location.href='/'"></result>
         </action>
         <action name="logout" class="water.ustc.action.LogoutAction"
                 method="handleLogout">
             <interceptro-ref name="log"></interceptro-ref>
-            <result name="success" type="script" value="<script>alert('删除账号成功!')"></result>
+            <result name="success" type="script" value="alert('删除账号成功!');window.location.href='/'"></result>
         </action>
     </controller>
 </sc-configuration>

@@ -44,6 +44,7 @@
                         </xsl:attribute>
                     </input>
                 </form>
+                <a href="/">return</a>
             </body>
         </html>
     </xsl:template>
